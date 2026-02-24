@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grace & Michael's Wedding – Add to Calendar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background-color: #fafafa;
+}
+h1 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 30px;
+  color: #555;
+}
+.button {
+  display: block;
+  width: 260px;
+  margin: 12px auto;
+  padding: 14px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: white;
+}
+.google { background-color: #4285F4; }
+.outlook { background-color: #0078D4; }
+.apple { background-color: #333333; }
+.button:hover { opacity: 0.85; }
+</style>
+</head>
+<body>
+
+<h1>Grace & Michael's Wedding</h1>
+<p>July 11, 2026<br>
+11:00 AM – 4:00 PM (Pacific Time)<br>
+Sequoyah Country Club<br>
+Oakland, CA</p>
+
+<a class="button google"
+href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Grace%20%26%20Michael%27s%20Wedding&dates=20260711T180000Z/20260711T230000Z&location=Sequoyah%20Country%20Club%204550%20Heafey%20Rd%2C%20Oakland%2C%20CA%2094605&details=Join%20us%20to%20celebrate%20Grace%20%26%20Michael%27s%20Wedding!"
+target="_blank">
+Add to Google Calendar
+</a>
+
+<a class="button outlook"
+href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=Grace%20%26%20Michael%27s%20Wedding&startdt=2026-07-11T11:00:00&enddt=2026-07-11T16:00:00&location=Sequoyah%20Country%20Club%204550%20Heafey%20Rd%2C%20Oakland%2C%20CA%2094605&body=Join%20us%20to%20celebrate%20Grace%20%26%20Michael%27s%20Wedding!"
+target="_blank">
+Add to Outlook
+</a>
+
+<a class="button apple"
+href="grace-michael-wedding.ics" download>
+Download .ics File (Apple/Other)
+</a>
+
+</body>
+</html>
