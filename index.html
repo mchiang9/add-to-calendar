@@ -2,62 +2,156 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Grace & Michael's Wedding – Add to Calendar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grace & Michael's Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 40px;
-  background-color: #fafafa;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8f6f3, #f1ede7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e2e2e;
+}
+
+.card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
   margin-bottom: 10px;
 }
-p {
+
+.subtitle {
+  font-size: 15px;
+  color: #777;
   margin-bottom: 30px;
-  color: #555;
+  line-height: 1.6;
 }
-.button {
+
+.details {
+  margin-bottom: 35px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+button, .btn {
   display: block;
-  width: 260px;
-  margin: 12px auto;
+  width: 100%;
   padding: 14px;
-  font-size: 16px;
+  margin: 12px 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.google {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.google:hover {
+  background: #f5f5f5;
+}
+
+.outlook {
+  background: #0078D4;
   color: white;
 }
-.google { background-color: #4285F4; }
-.outlook { background-color: #0078D4; }
-.apple { background-color: #333333; }
-.button:hover { opacity: 0.85; }
+
+.outlook:hover {
+  background: #0062ad;
+}
+
+.apple {
+  background: #111;
+  color: white;
+}
+
+.apple:hover {
+  background: #333;
+}
+
+.footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 40px 25px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
 </style>
 </head>
+
 <body>
 
-<h1>Grace & Michael's Wedding</h1>
-<p>July 11, 2026<br>
-11:00 AM – 4:00 PM (Pacific Time)<br>
-Sequoyah Country Club<br>
-Oakland, CA</p>
+<div class="card">
+  <h1>Grace & Michael</h1>
+  <div class="subtitle">We're getting married 🤍</div>
 
-<a class="button google"
-href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Grace%20%26%20Michael%27s%20Wedding&dates=20260711T180000Z/20260711T230000Z&location=Sequoyah%20Country%20Club%204550%20Heafey%20Rd%2C%20Oakland%2C%20CA%2094605&details=Join%20us%20to%20celebrate%20Grace%20%26%20Michael%27s%20Wedding!"
-target="_blank">
-Add to Google Calendar
-</a>
+  <div class="details">
+    <strong>July 11, 2026</strong><br>
+    11:00 AM – 4:00 PM (Pacific Time)<br><br>
+    Sequoyah Country Club<br>
+    4550 Heafey Rd<br>
+    Oakland, CA
+  </div>
 
-<a class="button outlook"
-href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=Grace%20%26%20Michael%27s%20Wedding&startdt=2026-07-11T11:00:00&enddt=2026-07-11T16:00:00&location=Sequoyah%20Country%20Club%204550%20Heafey%20Rd%2C%20Oakland%2C%20CA%2094605&body=Join%20us%20to%20celebrate%20Grace%20%26%20Michael%27s%20Wedding!"
-target="_blank">
-Add to Outlook
-</a>
+  <a class="btn google"
+  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Grace%20%26%20Michael%27s%20Wedding&dates=20260711T180000Z/20260711T230000Z&location=Sequoyah%20Country%20Club%204550%20Heafey%20Rd%2C%20Oakland%2C%20CA%2094605&details=Join%20us%20to%20celebrate%20Grace%20%26%20Michael%27s%20Wedding!"
+  target="_blank">
+  Add to Google Calendar
+  </a>
 
-<a class="button apple"
-href="grace-michael-wedding.ics" download>
-Download .ics File (Apple/Other)
-</a>
+  <a class="btn outlook"
+  href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=Grace%20%26%20Michael%27s%20Wedding&startdt=2026-07-11T11:00:00&enddt=2026-07-11T16:00:00&location=Sequoyah%20Country%20Club%204550%20Heafey%20Rd%2C%20Oakland%2C%20CA%2094605&body=Join%20us%20to%20celebrate%20Grace%20%26%20Michael%27s%20Wedding!"
+  target="_blank">
+  Add to Outlook
+  </a>
+
+  <a class="btn apple"
+  href="grace-michael-wedding.ics" download>
+  Download .ics (Apple & Other)
+  </a>
+
+  <div class="footer">
+    We can't wait to celebrate with you ✨
+  </div>
+</div>
 
 </body>
 </html>
